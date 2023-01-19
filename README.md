@@ -466,7 +466,7 @@ cards:
                     icon: mdi:chandelier
                     tap_action:
                       action: toggle
-                    entity: light.livingroom_lamp_1
+                    entity: light.livingroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -490,7 +490,7 @@ cards:
                     icon: mdi:chandelier
                     tap_action:
                       action: toggle
-                    entity: light.livingroom_lamp_2
+                    entity: light.livingroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -518,7 +518,7 @@ cards:
                     icon: mdi:bookshelf
                     tap_action:
                       action: toggle
-                    entity: light.livingroom_lamp_3
+                    entity: light.livingroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -542,7 +542,7 @@ cards:
                     icon: mdi:door-sliding
                     tap_action:
                       action: toggle
-                    entity: light.livingroom_lamp_4
+                    entity: light.livingroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -570,7 +570,7 @@ cards:
                     icon: mdi:television-ambient-light
                     tap_action:
                       action: toggle
-                    entity: light.livingroom_lamp_5
+                    entity: light.livingroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -594,7 +594,7 @@ cards:
                     icon: mdi:stairs
                     tap_action:
                       action: toggle
-                    entity: light.livingroom_lamp_6
+                    entity: light.livingroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -668,9 +668,9 @@ cards:
                     custom_fields:
                       notification: |
                         [[[
-                           if (states['sensor.bedroom_lights_of_count'].state == '0')
+                           if (states['sensor.boys_lights_of_count'].state == '0')
                             return ' '
-                           return `${states['sensor.bedroom_lights_of_count'].state}`
+                           return `${states['sensor.boys_lights_of_count'].state}`
                         ]]]
                     name: ' '
                   - type: custom:button-card
@@ -682,7 +682,7 @@ cards:
                       icon:
                         - color: |
                             [[[
-                                return `${states['sensor.bedroom_temp_color'].state}`
+                                return `${states['sensor.boys_temp_color'].state}`
                             ]]]
                         - width: 15px
                         - position: relative
@@ -725,7 +725,7 @@ cards:
                     icon: none
                     tap_action:
                       action: none
-                    entity: light.bedroom_lamp_fake (put any light, wont show up, but is needed)
+                    entity: light.bedroom_lamp (put any light, wont show up, but is needed)
                     styles:
                       icon:
                         - width: 18px
@@ -752,7 +752,7 @@ cards:
                     icon: mdi:bookshelf
                     tap_action:
                       action: toggle
-                    entity: light.bedroom_lamp_2
+                    entity: light.bedroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -774,7 +774,7 @@ cards:
                     icon: mdi:light-recessed
                     tap_action:
                       action: toggle
-                    entity: light.bedroom_lamp_3
+                    entity: light.bedroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -796,7 +796,7 @@ cards:
                     icon: mdi:wardrobe
                     tap_action:
                       action: toggle
-                    entity: light.bedroom_lamp_1
+                    entity: light.bedroom_lamp
                     styles:
                       icon:
                         - width: 18px
@@ -823,7 +823,7 @@ cards:
                     icon: none
                     tap_action:
                       action: none
-                    entity: light.bedroom_lamp_fake ( put any light, wont show up, but is needed)
+                    entity: light.bedroom_lamp ( put any light, wont show up, but is needed)
                     styles:
                       icon:
                         - width: 18px
