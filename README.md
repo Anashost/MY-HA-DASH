@@ -141,8 +141,8 @@ After swipe:
   <summary> (for header) Temperature icon color based of temperature (Click to expand)</summary>
   (This one is for the mushroom chip cards, as those wont work with rgb colors, so we use color names)
   
-* paste this code to your **sensors.yaml** (replace the word *user* with your own name or family members names)
-  
+* paste this code to your **sensors.yaml** 
+
   ```
   - platform: template
     sensors:
