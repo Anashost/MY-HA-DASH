@@ -98,8 +98,6 @@ After swipe:
 
 </details>
 
-
-
 ### 4. you need to create these additional **sensors**:
 <details>
   <summary>Battery icons & color based of phone battery level (Click to expand)</summary>
@@ -138,7 +136,31 @@ After swipe:
   ```
   
 </details>
+
+<details>
+  <summary> Temperature icon color based of temperature (Click to expand)</summary>
+  (This one is for the mushroom chip card as those wont work with rgb colors, so we use color names)
   
+* paste this code to your **sensors.yaml** (replace the word *user* with your own name or family members names)
+  
+  ```
+  - platform: template
+    sensors:
+      livingroom_temp_color_no_rgb:
+        friendly_name: 'livingroom temp color no rgb'
+        value_template: >
+            {% set state = states('sensor.livingroom_temperature')|float %}
+              {% if state >= 0 and state < 18 %} blue
+              {% elif state >= 18 and state < 20 %} yellow
+              {% elif state >= 20 and state < 23 %} orange
+              {% elif state >= 23 and state < 50 %} red
+              {% else %} grey
+              {% endif %}
+  ```
+  
+</details>
+
+
 <details>
   <summary>Temperature icon color based of temperature (Click to expand)</summary>
   
