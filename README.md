@@ -23,6 +23,7 @@ After swipe:
 ### 2. you need to enable these sensors in the companion app:
 * Battery sensors
 * Network sensors
+* location sensors
 
 ### 3. you need to have/create **groups** and lights count **sensors**:
 <details>
