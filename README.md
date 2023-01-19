@@ -138,8 +138,8 @@ After swipe:
 </details>
 
 <details>
-  <summary> Temperature icon color based of temperature (Click to expand)</summary>
-  (This one is for the mushroom chip card as those wont work with rgb colors, so we use color names)
+  <summary> (for header) Temperature icon color based of temperature (Click to expand)</summary>
+  (This one is for the mushroom chip cards, as those wont work with rgb colors, so we use color names)
   
 * paste this code to your **sensors.yaml** (replace the word *user* with your own name or family members names)
   
@@ -162,7 +162,7 @@ After swipe:
 
 
 <details>
-  <summary>Temperature icon color based of temperature (Click to expand)</summary>
+  <summary> (for rooms) Temperature icon color based of temperature (Click to expand)</summary>
   
 * paste this code to your **sensors.yaml**
   
