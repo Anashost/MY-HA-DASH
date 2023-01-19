@@ -313,9 +313,9 @@ After swipe:
 
 - Go to your dashboard add card then choose **Manual**.
 - copy/paste the code below.
-- there is lines of code between "//////////", this code just make empty lines, but is needed for the layout so keep them.
+- there is lines of code between "////////", this code just make empty lines, but is needed for the layout so keep them.
+- remove these marks "////////" after you copy/paste the code.
 - replace entities like: Lights, lights count, groups, temperature sensors, etc.. with your own entities.
-- remove these marks "//////////" after you copy/paste the code.
 
 <details>
   <summary>Yaml Code (Click to expand)</summary>
