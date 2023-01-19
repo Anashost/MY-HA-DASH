@@ -65,6 +65,41 @@ After swipe:
   
 </details>
 
+<details>
+  <summary>All devices Group example (Click to expand)</summary>
+  
+* paste this code to your **groups.yaml**
+  
+  ```
+  all_devices:
+    name: All devices 
+    entities:
+    - light.livingroom_lamp
+    - light.bedroom_lamp
+    - switch.plug
+    - media_plyer.tv
+  ```
+  
+</details>
+
+<details>
+  <summary>All plugs Group example (Click to expand)</summary>
+  
+* paste this code to your **groups.yaml**
+  
+  ```
+  all_plugs:
+    name: All plugs
+    entities:
+    - switch.plug_1
+    - switch.plug_2
+    - switch.plug_3
+  ```
+
+</details>
+
+
+
 ### 4. you need to create these additional **sensors**:
 <details>
   <summary>Battery icons & color based of phone battery level (Click to expand)</summary>
