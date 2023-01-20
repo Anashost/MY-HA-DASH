@@ -65,6 +65,36 @@ After swipe:
   
 </details>
 
+
+<details>
+  <summary>Livingroom Lights count example (Click to expand)</summary>
+  
+* paste this code to your **sensors.yaml**
+* replace Area's names in line 8 with your own.
+
+  ```
+  - platform: template
+    sensors:
+      lights_of_count:
+        friendly_name: 'Lights of count'
+        unique_id: lights_of_count
+        value_template: > 
+          {%- set search_state = 'on' %}
+          {%- set search_areas = ['Bedroom','Living Room','Kitchen','Bath'] %}
+          {%- set ns = namespace(lights=[]) %}
+          {%- for light in states.light 
+          | selectattr('state','eq', search_state)
+          | rejectattr('object_id', 'search', 'segment')%}
+            {%- for area in search_areas %}
+              {% if area_name(light.entity_id) == area %}
+                {%- set ns.lights = ns.lights + [ light.entity_id ] %}
+              {% endif%}
+              {%- endfor %}
+          {%- endfor %}
+          {{ ns.lights| list | length }}
+  ```
+</details>
+
 <details>
   <summary>All lights Group example (Click to expand)</summary>
   
