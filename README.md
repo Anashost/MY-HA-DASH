@@ -233,7 +233,7 @@ After swipe:
 ### 5. To get the state of the laptop/PC in the Boys Room, i've used [HASS.Agent](https://github.com/LAB02-Research/HASS.Agent). otherwise remove it from code.
 
 *****
-**_(Note: make more sensors for every user & room you have)_**
+**_(Note: make more groups & sensors for every user & room you have)_**
 *****
 
 
