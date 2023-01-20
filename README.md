@@ -399,7 +399,7 @@ cards:
           navigation_path: floor-plane
         name: Floor
       - type: custom:mushroom-entity-card
-        entity: group.all_plugs
+        entity: zone.home
         name: Media
         icon: mdi:television-play
         icon_color: red
