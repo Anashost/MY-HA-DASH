@@ -66,6 +66,23 @@ After swipe:
 </details>
 
 <details>
+  <summary>All lights Group example (Click to expand)</summary>
+  
+* paste this code to your **groups.yaml**
+  
+  ```
+  all_lights:
+    name: All lights
+    entities:
+    - light.livingroom_lamp
+    - light.front_door_lamp
+    - light.bedroom_lamp
+    - light.light.kilsmp
+  ```
+  
+</details>
+
+<details>
   <summary>All devices Group example (Click to expand)</summary>
   
 * paste this code to your **groups.yaml**
@@ -139,7 +156,6 @@ After swipe:
 
 <details>
   <summary> (for header) Temperature icon color based of temperature (Click to expand)</summary>
-  (This one is for the mushroom chip cards, as those wont work with rgb colors, so we use color names)
   
 * paste this code to your **sensors.yaml** 
 
@@ -192,7 +208,7 @@ After swipe:
 
 
 # Header card:
-![Alt text](imgs/header.png "Header)
+![Alt text](imgs/Screenshot_20230119_120950_Home Assistant.jpg "Header)
 
 - Go to your dashboard add card then choose **Manual**.
 - copy/paste the code below.
