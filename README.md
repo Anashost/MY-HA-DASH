@@ -3,8 +3,6 @@ In this repo i will share with you how to create the **Header**, **Persons** and
 
 ![Alt text](imgs/main1.png "Persons")
 
-![Alt text](imgs/main-1-white.png "white")
-
 ### Rooms:
 Before swipe:
 
