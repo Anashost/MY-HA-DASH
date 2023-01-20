@@ -1,5 +1,5 @@
 ### This layout was only tested on/created for Android phones.
-In this repo i will share with you how to create the **Persons** and **Rooms** cards for this dashboard
+In this repo i will share with you how to create the **Header**, **Persons** and **Rooms** cards for this dashboard
 ***
 ![Alt text](imgs/main1.png "Persons")
 
