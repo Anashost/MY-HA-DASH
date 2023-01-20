@@ -48,6 +48,7 @@ After swipe:
   <summary>Livingroom Lights count example (Click to expand)</summary>
   
 * paste this code to your **sensors.yaml**
+* replace living room Area with in line 7 with your own.
   
   ```
   - platform: template
@@ -64,7 +65,6 @@ After swipe:
   ```
   
 </details>
-
 
 <details>
   <summary>Livingroom Lights count example (Click to expand)</summary>
