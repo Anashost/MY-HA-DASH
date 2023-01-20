@@ -234,7 +234,7 @@ After swipe:
   
 </details>
 
-### 5. To get the state of the laptop/PC in the Boys Room, i've used [HASS.Agent](https://github.com/LAB02-Research/HASS.Agent). otherwise remove it from code.
+### 5. To get the state of the laptop/PC in the Boys Room, i've used [HASS.Agent](https://github.com/LAB02-Research/HASS.Agent).
 
 <details>
   <summary> PC/laptop state code (Click to expand)</summary>
