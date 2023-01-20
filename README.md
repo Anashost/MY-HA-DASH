@@ -26,23 +26,6 @@ After swipe:
 * location sensors
 
 ### 3. you need to have/create **groups** and lights count **sensors**:
-<details>
-  <summary>Living room Group example (Click to expand)</summary>
-  
-* paste this code to your **groups.yaml**
-  
-  ```
-  living_room_lights:
-    name: Living Room lights
-    entities:
-    - light.livingroom_lamp_1
-    - light.livingroom_lamp_2
-    - light.livingroom_lamp_3
-    - light.livingroom_lamp_4
-    - light.livingroom_lamp_5
-  ```
-  
-</details>
 
 <details>
   <summary>Livingroom Lights count example (Click to expand)</summary>
@@ -93,6 +76,24 @@ After swipe:
           {%- endfor %}
           {{ ns.lights| list | length }}
   ```
+</details>
+
+<details>
+  <summary>Living room Group example (Click to expand)</summary>
+  
+* paste this code to your **groups.yaml**
+  
+  ```
+  living_room_lights:
+    name: Living Room lights
+    entities:
+    - light.livingroom_lamp_1
+    - light.livingroom_lamp_2
+    - light.livingroom_lamp_3
+    - light.livingroom_lamp_4
+    - light.livingroom_lamp_5
+  ```
+  
 </details>
 
 <details>
