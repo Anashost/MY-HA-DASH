@@ -189,6 +189,193 @@ After swipe:
 **_(Note: make more sensors for every user & room you have)_**
 *****
 
+
+## Header cards:
+![Alt text](imgs/header.png "Header)
+
+- Go to your dashboard add card then choose **Manual**.
+- copy/paste the code below.
+- in this card use the (for mushroom) sensor from step .4 to avoid errors.
+- replace entities like: lights count, groups, temperature sensors, nav bath, etc.. with your own entities.
+
+<details>
+  <summary>Yaml Code (Click to expand)</summary>
+
+```
+type: custom:stack-in-card
+mode: vertical
+keep:
+  outer_padding: true
+  margin: true
+  box_shadow: false
+  background: false
+cards:
+  - type: custom:mushroom-chips-card
+    chips:
+      - type: entity
+        entity: zone.home
+        icon_color: green
+        name: Outside
+        icon: mdi:pine-tree
+        content_info: name
+        tap_action:
+          action: none
+      - type: weather
+        entity: weather.home_acc
+        show_conditions: true
+        show_temperature: true
+      - type: entity
+        entity: sensor.home_acc_wind
+        icon: mdi:weather-windy
+        icon_color: blue-grey
+    alignment: center
+  - type: custom:mushroom-chips-card
+    chips:
+      - type: template
+        icon: mdi:home
+        icon_color: |-
+          {% if is_state('group.all_devices','on')%}
+           amber
+          {%endif%}
+          {% if is_state('group.all_devices','off')%}
+           grey
+          {%endif%}
+        tap_action:
+          action: more-info
+        entity: group.all_devices
+      - type: template
+        entity: sensor.livingroom_temperature
+        icon_color: '{{states(''sensor.livingroom_temp_color_no_rgb'')}}'
+        icon: mdi:thermometer
+        use_entity_picture: true
+        double_tap_action:
+          action: none
+        hold_action:
+          action: none
+        tap_action:
+          action: more-info
+        content: |-
+          {% if is_state('sensor.livingroom_temperature','unknown') %}
+            -
+          {% else %}
+            {{states('sensor.livingroom_temperature')}}°
+          {% endif %}
+      - type: template
+        entity: sensor.livingroom_humidity
+        icon_color: light-blue
+        icon: mdi:water-percent
+        name: ''
+        use_entity_picture: true
+        tap_action:
+          action: more-info
+        content: |-
+          {% if is_state('sensor.livingroom_humidity','unknown') %}
+            -
+          {% else %}
+            {{states('sensor.livingroom_humidity')}}%
+          {% endif %}
+      - type: entity
+        entity: zone.home
+        icon_color: green
+        icon: mdi:shield-home
+        name: Alarm
+        content_info: none
+        tap_action:
+          action: navigate
+          navigation_path: alarm
+      - type: template
+        icon: mdi:lightbulb-group
+        content: '{{states(''sensor.lights_of_count'')}}'
+        icon_color: |-
+          {% set state = states('sensor.lights_of_count')|float %}
+          {% if state <= 0 %} grey
+          {% else %} amber
+          {% endif %}
+        entity: sensor.lights_of_count
+      - type: template
+        entity: binary_sensor.contact_sensor
+        icon_color: |-
+          {% if is_state('binary_sensor.contact_sensor','off') %}
+            green
+          {% elif is_state('binary_sensor.contact_sensor','on') %}
+            red
+          {% else %}
+            red
+          {% endif %}
+        icon: |-
+          {% if is_state('binary_sensor.contact_sensor','off') %}
+            mdi:door-closed-lock
+          {% elif is_state('binary_sensor.contact_sensor','on') %}
+            mdi:door-open
+          {% else %}
+            mdi:progress-question
+          {% endif %}
+        name: ''
+        use_entity_picture: true
+        tap_action:
+          action: more-info
+    alignment: center
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-entity-card
+        entity: zone.home
+        icon: mdi:remote
+        icon_color: teal
+        layout: vertical
+        hold_action:
+          action: none
+        tap_action:
+          action: navigate
+          navigation_path: remote
+        primary_info: none
+        secondary_info: name
+        name: TV
+      - type: custom:mushroom-entity-card
+        entity: group.all_lights
+        icon_color: yellow
+        secondary_info: name
+        layout: vertical
+        name: Lights
+        tap_action:
+          action: more-info
+        primary_info: none
+        icon: mdi:lamps
+      - type: custom:mushroom-entity-card
+        entity: zone.home
+        icon: mdi:floor-plan
+        icon_color: brown
+        layout: vertical
+        primary_info: none
+        secondary_info: name
+        tap_action:
+          action: navigate
+          navigation_path: floor-plane
+        name: Floor
+      - type: custom:mushroom-entity-card
+        entity: group.all_plugs
+        name: Media
+        icon: mdi:television-play
+        icon_color: red
+        layout: vertical
+        tap_action:
+          action: navigate
+          navigation_path: media
+        secondary_info: name
+        primary_info: none
+      - type: custom:mushroom-entity-card
+        entity: group.all_plugs
+        name: Plugs
+        icon: mdi:power-socket-eu
+        icon_color: green
+        layout: vertical
+        tap_action:
+          action: navigate
+          navigation_path: plugs
+        secondary_info: name
+        primary_info: none
+```
+</details>
+
   
 ## Person cards:
 ![Alt text](imgs/person.png "Persons")
@@ -370,6 +557,7 @@ After swipe:
 
 - Go to your dashboard add card then choose **Manual**.
 - copy/paste the code below.
+- in this card use the (for rooms) sensor from step .4 to avoid errors.
 - there is lines of code between "////////", this code just make empty lines, but is needed for the layout so keep them.
 - remove these marks "////////" after you copy/paste the code.
 - replace entities like: Lights, lights count, groups, temperature sensors, etc.. with your own entities.
