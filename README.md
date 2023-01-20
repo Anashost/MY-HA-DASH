@@ -1,6 +1,7 @@
 ### This layout was only tested on Android phones.
 In this repo i will share with you how to create the **Header**, **Persons** and **Rooms** cards for this dashboard
-**
+*****
+
 ![Alt text](imgs/main1.png "Persons")
 
 ### Rooms:
@@ -235,10 +236,6 @@ After swipe:
 
 ### 5. To get the state of the laptop/PC in the Boys Room, i've used [HASS.Agent](https://github.com/LAB02-Research/HASS.Agent). otherwise remove it from code.
 
-*****
-**_(Note: make more groups & sensors for every user & room you have)_**
-*****
-
 <details>
   <summary> PC/laptop state code (Click to expand)</summary>
   
@@ -270,7 +267,11 @@ After swipe:
   ```
   
 </details>
-
+  
+*****
+**_(Note: make more groups & sensors for every user & room you have)_**
+*****
+  
 # Header card:
 ![Alt text](imgs/header.png "Header")
 
