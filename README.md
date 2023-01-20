@@ -26,6 +26,7 @@ After swipe:
 * location sensors
 
 ### 3. you need to have/create **groups** and lights count **sensors**:
+(Restart is required after you create the sensors)
 
 <details>
   <summary>Livingroom Lights count example (Click to expand)</summary>
@@ -147,6 +148,8 @@ After swipe:
 </details>
 
 ### 4. you need to create these additional **sensors**:
+(Restart is required after you create the sensors)
+
 <details>
   <summary>Battery icons & color based of phone battery level (Click to expand)</summary>
   
