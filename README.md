@@ -67,7 +67,7 @@ After swipe:
 </details>
 
 <details>
-  <summary>Livingroom Lights count example (Click to expand)</summary>
+  <summary>All home Lights count example (Click to expand)</summary>
   
 * paste this code to your **sensors.yaml**
 * replace Area's names in line 8 with your own.
