@@ -108,7 +108,7 @@ After swipe:
     - light.livingroom_lamp
     - light.front_door_lamp
     - light.bedroom_lamp
-    - light.light.kilsmp
+    - light.light_kitchen
   ```
   
 </details>
@@ -125,7 +125,7 @@ After swipe:
     - light.livingroom_lamp
     - light.bedroom_lamp
     - switch.plug
-    - media_plyer.tv
+    - media_player.tv
   ```
   
 </details>
