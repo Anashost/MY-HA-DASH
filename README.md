@@ -241,7 +241,37 @@ After swipe:
 **_(Note: make more groups & sensors for every user & room you have)_**
 *****
 
-
+<details>
+  <summary> PC/laptop state code (Click to expand)</summary>
+  
+* paste this code to the desirable **Room** (Add it after last custom:button-card in that room)
+  
+  ```       
+                  - type: custom:button-card
+                    state:
+                      - operator: default
+                        color: grey
+                      - value: Unlocked
+                        color: rgb(92, 214, 92)
+                      - value: Locked
+                        color: rgb(255, 71, 26)
+                        styles:
+                          card:
+                            - border-radius: 50%
+                    icon: mdi:laptop
+                    tap_action:
+                      action: none
+                    entity: sensor."YOUR_PC_NAME"_sessionstate
+                    styles:
+                      icon:
+                        - width: 19px
+                      card:
+                        - width: 40px
+                        - height: 40px
+                    name: ' '
+  ```
+  
+</details>
 
 # Header card:
 ![Alt text](imgs/header.png "Header")
