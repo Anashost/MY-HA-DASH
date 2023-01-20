@@ -208,7 +208,7 @@ After swipe:
 
 
 # Header card:
-![Alt text](imgs/Screenshot_20230119_120950_Home Assistant.jpg "Header")
+![Alt text](imgs/header.png "Header")
 
 - Go to your dashboard add card then choose **Manual**.
 - copy/paste the code below.
