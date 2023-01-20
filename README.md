@@ -190,12 +190,13 @@ After swipe:
 *****
 
 
-## Header cards:
+
+# Header card:
 ![Alt text](imgs/header.png "Header)
 
 - Go to your dashboard add card then choose **Manual**.
 - copy/paste the code below.
-- in this card use the (for mushroom) sensor from step .4 to avoid errors.
+- in this card use the (for header) sensor from step .4 to avoid errors.
 - replace entities like: lights count, groups, temperature sensors, nav bath, etc.. with your own entities.
 
 <details>
@@ -377,7 +378,7 @@ cards:
 </details>
 
   
-## Person cards:
+# Person cards:
 ![Alt text](imgs/person.png "Persons")
 
 - Go to your dashboard add card then choose **Manual**.
@@ -546,7 +547,7 @@ cards:
 ```
 </details>
 
-## Rooms cards:
+# Rooms cards:
 before swipe:
 
 ![Alt text](imgs/rooms.png "Persons")
