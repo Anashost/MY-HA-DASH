@@ -1,0 +1,410 @@
+square: false
+columns: 1
+type: grid
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: horizontal-stack
+        cards:
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            icon: mdi:power
+            hold_action:
+              action: none
+            icon_height: 25px
+            show_state: false
+            entity: switch.ir_remote_key_power
+          - show_name: true
+            show_icon: false
+            type: button
+            tap_action:
+              action: toggle
+            show_state: false
+            hold_action:
+              action: none
+            name: Source
+            entity: switch.ir_remote_key_source
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            show_state: false
+            hold_action:
+              action: none
+            icon: mdi:volume-mute
+            icon_height: 25px
+            entity: switch.ir_remote_key_mute
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            icon: mdi:menu
+            show_state: false
+            hold_action:
+              action: none
+            icon_height: 25px
+            entity: switch.ir_remote_key_menu
+  - type: horizontal-stack
+    cards:
+      - type: horizontal-stack
+        cards:
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: none
+            icon: none
+            hold_action:
+              action: none
+            name: Input
+            icon_height: 50px
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: none
+            icon: none
+            hold_action:
+              action: none
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: none
+            icon: none
+            hold_action:
+              action: none
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: none
+            icon: none
+            hold_action:
+              action: none
+          - show_name: false
+            show_icon: true
+            type: button
+            tap_action:
+              action: none
+            icon: none
+            hold_action:
+              action: none
+  - type: horizontal-stack
+    cards:
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        icon: mdi:plus
+        hold_action:
+          action: none
+        entity: switch.ir_remote_key_volumeup
+        show_state: false
+        icon_height: 50px
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: mdi:arrow-up-bold
+        entity: switch.ir_remote_key_up
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        icon: mdi:chevron-double-up
+        hold_action:
+          action: none
+        entity: switch.ir_remote_key_channelup
+  - type: horizontal-stack
+    cards:
+      - show_name: true
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        icon: ''
+        hold_action:
+          action: none
+        name: VOL
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: mdi:arrow-left-bold
+        entity: switch.ir_remote_key_left
+        icon_height: 50px
+      - show_name: true
+        show_icon: false
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: ''
+        name: OK
+        entity: switch.ir_remote_key_ok
+        icon_height: 50px
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: mdi:arrow-right-bold
+        entity: switch.ir_remote_key_right
+      - show_name: true
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        icon: ''
+        hold_action:
+          action: none
+        name: CH
+  - type: horizontal-stack
+    cards:
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        icon: mdi:minus
+        hold_action:
+          action: none
+        entity: switch.ir_remote_key_volumedown
+        icon_height: 50px
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        icon: ''
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: mdi:arrow-down-bold
+        entity: switch.ir_remote_key_down
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        hold_action:
+          action: none
+        icon: ''
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        icon: mdi:chevron-double-down
+        entity: switch.ir_remote_key_channeldown
+  - type: horizontal-stack
+    cards:
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        icon: mdi:circle-small
+        hold_action:
+          action: none
+        name: Volume
+      - show_name: true
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: mdi:arrow-down-left-bold
+        entity: switch.ir_remote_key_return
+        name: Back
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: mdi:home
+        entity: switch.ir_remote_key_smart
+        name: Input
+      - show_name: true
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        icon: mdi:exit-to-app
+        entity: switch.ir_remote_key_exit
+        name: Exit
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        icon: mdi:circle-small
+        hold_action:
+          action: none
+        name: Channel
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-entity-card
+        entity: input_boolean.on_state
+        double_tap_action:
+          action: none
+        primary_info: none
+        secondary_info: none
+        hold_action:
+          action: none
+        tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.ir_remote_key_red
+          data: {}
+        layout: vertical
+        icon_color: red
+        icon: mdi:rectangle
+        name: Red
+      - type: custom:mushroom-entity-card
+        entity: input_boolean.on_state
+        double_tap_action:
+          action: none
+        primary_info: none
+        secondary_info: none
+        hold_action:
+          action: none
+        tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.ir_remote_key_green
+          data: {}
+        layout: vertical
+        icon_color: green
+        icon: mdi:rectangle
+        name: Green
+      - type: custom:mushroom-entity-card
+        entity: input_boolean.on_state
+        double_tap_action:
+          action: none
+        primary_info: none
+        secondary_info: none
+        hold_action:
+          action: none
+        tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.ir_remote_key_yellow
+          data: {}
+        layout: vertical
+        icon_color: yellow
+        icon: mdi:rectangle
+        name: Yellow
+      - type: custom:mushroom-entity-card
+        entity: input_boolean.on_state
+        double_tap_action:
+          action: none
+        primary_info: none
+        secondary_info: none
+        hold_action:
+          action: none
+        tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.ir_remote_key_blue
+          data: {}
+        layout: vertical
+        icon_color: blue
+        icon: mdi:rectangle
+        name: Blue
+        fill_container: true
+  - type: horizontal-stack
+    cards:
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        entity: ''
+        hold_action:
+          action: none
+        icon_height: 50px
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        entity: switch.ir_remote_key_pause
+        icon: mdi:stop-circle-outline
+        hold_action:
+          action: none
+        show_state: false
+        icon_height: 50px
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        entity: switch.ir_remote_key_play
+        icon: mdi:play-circle-outline
+        hold_action:
+          action: none
+      - show_name: false
+        show_icon: true
+        type: button
+        tap_action:
+          action: toggle
+        entity: switch.ir_remote_key_pause
+        hold_action:
+          action: none
+        name: ' '
+        icon: mdi:pause-circle-outline
+      - show_name: false
+        show_icon: false
+        type: button
+        tap_action:
+          action: none
+        entity: ''
+        hold_action:
+          action: none
