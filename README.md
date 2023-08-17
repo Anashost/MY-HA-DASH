@@ -16,7 +16,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 
 ### Notes:
 - if you dont have motion sensors, you can remove the motion sensors sections from the card.
-- for fans, am just using smart plug exammple: `switch.fan_plug`.
+- for fans, i'm just using smart plugs exammple: `switch.fan_plug`.
 - try to understand what the code does in the card to be able to customize the cards the way you like.
 - if you have any qustions, feel free to open an issue and i will reply ASAP.
 - more coming soon, follow me on [YouTube](https://www.youtube.com/@anasbox)
