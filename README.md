@@ -12,7 +12,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 - **Header card**
 - **Persons cards**
 - **Rooms cards**
-<img src="https://github.com/Anashost/MY-HA-DASH-V2/assets/41167157/8cd75f62-00b7-4ee2-beb3-93b9c505e0c3" width=50% height=50%>
+<img src="https://github.com/Anashost/MY-HA-DASH/assets/41167157/fb7c4c4a-df88-41c9-8b4e-3d79cdbf88ea" width=50% height=50%>
 
 ### Notes:
 - if you dont have motion sensors, you can remove the motion sensors sections from the card.
