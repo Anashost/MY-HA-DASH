@@ -434,7 +434,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 # Setup Dashboard :
 
 ### Header card:
-<img src="https://github.com/Anashost/MY-HA-DASH-V2/assets/41167157/7fdde7ee-e3e7-45a4-b7db-f467e5ae0333" width=60% height=60%>
+<img src="https://github.com/Anashost/MY-HA-DASH/assets/41167157/bd2b3456-237c-4628-8b70-2a2b76ff5a97" width=60% height=60%>
 
 - Go to your dashboard add card then choose **Manual**.
 - copy/paste the code below.
@@ -836,7 +836,7 @@ cards:
 *****
 
 ### person cards:
-![person cards](https://github.com/Anashost/MY-HA-DASH-V2/assets/41167157/96b96b7b-f5e0-461e-b595-aacec06e1d2c)
+![person cards](https://github.com/Anashost/MY-HA-DASH/assets/41167157/a43b2841-f16d-4ceb-a700-660cfd00561f)
 
 - Go to your dashboard add card then choose **horizontal-stack**.
 - within the **horizontal-stack** add card with + and choose **Manual**
@@ -1163,7 +1163,7 @@ cards:
 - most room cards have **light.empty** entity, leave it as is, as this let you have an empty row (in the room card quick toggle view).
 
 #### Livingroom - Office
-![bedroom-kitchen](https://github.com/Anashost/MY-HA-DASH-V2/assets/41167157/124d54fe-466d-47a5-9cd7-02b3c6ebacf6)
+![living-office](https://github.com/Anashost/MY-HA-DASH/assets/41167157/4b70c121-1807-4fc7-9cbb-2c912748c00f)
 
 <details>
   <summary>Livingroom card</summary>
@@ -1830,7 +1830,7 @@ cards:
 
 *****
 
-![bedroom-kitchen](https://github.com/Anashost/MY-HA-DASH-V2/assets/41167157/21ac7cad-77f4-4cca-acb6-99809473c29e)
+![bedroom-kitchen](https://github.com/Anashost/MY-HA-DASH/assets/41167157/3ad550e4-ac3f-428c-a54b-9fce6ce182e9)
 
 <details>
   <summary>Bedroom card</summary>
@@ -2324,7 +2324,7 @@ cards:
 
 *****
 
-![bath-wc](https://github.com/Anashost/MY-HA-DASH-V2/assets/41167157/01492221-6a71-49f9-9d6d-5fafb2fe9f57)
+![bath-wc](https://github.com/Anashost/MY-HA-DASH/assets/41167157/ddb09146-df43-4f8c-91f6-d77d3440154b)
 
 <details>
   <summary>Bath card</summary>
@@ -2724,7 +2724,7 @@ cards:
 
 *****
 
-![security-hall](https://github.com/Anashost/MY-HA-DASH-V2/assets/41167157/748f7f5e-6ee5-4cfd-bb50-5f435ca82ad8)
+![security-hall](https://github.com/Anashost/MY-HA-DASH/assets/41167157/f766ca03-efda-44d4-94dc-04c4df1b49b0)
 
 <details>
   <summary>Security card</summary>
