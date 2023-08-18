@@ -3011,7 +3011,7 @@ cards:
 
 [community_forum]: https://github.com/Anashost/MY-HA-DASH/issues
 
-[paypal_me_shield]: https://img.shields.io/static/v1.svg?label=%20&message=PayPal.Me&logo=paypal
+[paypal_me_shield]: https://img.shields.io/static/v1.svg?label=%20&message=PayPal&logo=paypal
 
 [paypal_me]: https://www.paypal.me/anashost
 
