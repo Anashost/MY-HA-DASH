@@ -241,7 +241,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >          value_template: >
 >            {{ expand(area_entities('Media'))
 >              | selectattr('domain', 'in', ['media_player'])
->              | selectattr('state', 'eq', 'on')
+>              | selectattr('state', 'in', ['on', 'idle'])
 >              | rejectattr('object_id', 'search', 'segment')
 >              | list | count
 >            }}
@@ -1329,7 +1329,7 @@ cards:
             tap_action:
               action: none
             icon: mdi:youtube-tv
-            entity: media_player.samsung_tv_dlna
+            entity: media_player.samsung_tv
             styles:
               icon:
                 - width: 19px
