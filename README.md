@@ -185,7 +185,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >  <summary>Livingroom Lights count</summary>
 >  
 >* paste this code to your **sensors.yaml**
->* replace living room in line 7 with your own Area name, (upper/lower case sensitive).
+>* replace livingroom in line 7 with your own Area name, (upper/lower case sensitive).
 >  
 >  ```
 >    - platform: template
@@ -194,7 +194,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >          friendly_name: 'livingroom lights of count'
 >          unique_id: livingroom_lights_of_count
 >          value_template: >
->            {{ expand(area_entities('Living Room'))
+>            {{ expand(area_entities('Livingroom'))
 >              | selectattr('domain', 'in', ['light'])
 >              | selectattr('state', 'eq', 'on')
 >              | rejectattr('object_id', 'search', 'segment')
@@ -208,7 +208,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >  <summary>Office Lights count</summary>
 >  
 >* paste this code to your **sensors.yaml**
->* replace living room in line 7 with your own Area name, (upper/lower case sensitive).
+>* replace livingroom in line 7 with your own Area name, (upper/lower case sensitive).
 >  
 >  ```
 >    - platform: template
@@ -263,7 +263,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >          unique_id: lights_of_count
 >          value_template: > 
 >            {%- set search_state = 'on' %}
->            {%- set search_areas = ['Bedroom','Living Room','Kitchen','Hall','Bath','Inner Hall','WC','Office'] %}
+>            {%- set search_areas = ['Bedroom','Livingroom','Kitchen','Hall','Bath','Inner Hall','WC','Office'] %}
 >            {%- set ns = namespace(lights=[]) %}
 >            {%- for light in states.light 
 >            | selectattr('state','eq', search_state)
