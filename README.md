@@ -322,28 +322,6 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 ></details>
 >
 ><details>
->  <summary>(for person cards) This shows the user address nicley in the card</summary>
->  
->* paste this code to your **sensors.yaml** (replace the word *user* with your own name or family members names)
->  
->  ```
->    - platform: template
->      sensors:
->        user_geo_1:
->          friendly_name: 'user geo 1'
->          value_template: >
->              {{ (states('sensor.user_geocoded_location')).split(",")[0] }}
->    - platform: template
->      sensors:
->        user_geo_2:
->          friendly_name: 'user geo 2'
->          value_template: >
->              {{ (states('sensor.user_geocoded_location')).split(",")[1] }}
->  ```
->  
-></details>
->
-><details>
 >  <summary> (for header) Temperature icon color based of temperature</summary>
 >  
 >* paste this code to your **sensors.yaml** 
@@ -383,6 +361,28 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >                {% elif state >= 23 and state < 50 %} rgb(255, 51, 51)
 >                {% else %} grey
 >                {% endif %}
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>(for person cards) This shows the user address nicley in the card</summary>
+>  
+>* paste this code to your **sensors.yaml** (replace the word *user* with your own name or family members names)
+>  
+>  ```
+>    - platform: template
+>      sensors:
+>        user_geo_1:
+>          friendly_name: 'user geo 1'
+>          value_template: >
+>              {{ (states('sensor.user_geocoded_location')).split(",")[0] }}
+>    - platform: template
+>      sensors:
+>        user_geo_2:
+>          friendly_name: 'user geo 2'
+>          value_template: >
+>              {{ (states('sensor.user_geocoded_location')).split(",")[1] }}
 >  ```
 >  
 ></details>
