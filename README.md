@@ -3011,7 +3011,7 @@ cards:
 
 [paypal_me_shield]: https://img.shields.io/static/v1.svg?label=%20&message=PayPal&logo=paypal
 
-[paypal_me]: https://www.paypal.me/anashost
+[paypal_me]: https://www.paypal.me/supportanasbox
 
 [revolut_me_shield]: https://img.shields.io/static/v1.svg?label=%20&message=Revolut&logo=revolut
 
