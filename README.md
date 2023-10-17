@@ -1005,7 +1005,7 @@ cards:
             tap_action:
               action: more-info
           - type: entity
-            entity: automation.a_on_state
+            entity: input_boolean.a_on_state
             icon_color: red
             icon: mdi:cellphone-wireless
             use_entity_picture: false
