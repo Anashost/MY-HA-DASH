@@ -26,6 +26,8 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >For Home page:
 >* [lovelace-mushroom](https://github.com/piitaya/lovelace-mushroom)
 >* [lovelace-mushroom-themes](https://github.com/piitaya/lovelace-mushroom-themes)
+>
+>    Set the theme in Home Assistant profile to `mushroom shadow` to get rid of the boarders.
 >* [button-card](https://github.com/custom-cards/button-card)
 >* [stack-in-card](https://github.com/custom-cards/stack-in-card)
 >* [swipe-card](https://github.com/bramkragten/swipe-card)
