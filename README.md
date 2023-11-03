@@ -447,7 +447,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >        user_proximity:
 >          friendly_name: 'user proximity'
 >          value_template: >
->              {% set state = (states('proximity.user') | float * 3.28084 ) | round %}
+>              {% set state = states('proximity.user')|float %}
 >              {% if state >= 0 and state < 528 %} {{state|round}} ft
 >              {% elif state >= 528 and state < 5280 %} {{ (state * 0.0001894) | round(1) }} m
 >              {% elif state >= 5280 %} {{ (state * 0.0001894) | round(1) }} m
@@ -461,7 +461,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >* add this to your configuration.yaml:
 >  `proximity: !include proximity.yaml`
 >* create a proximity.yaml in your config/ and paste this code in it (replace the word *user* with your own name or family members names)
-> this calculates how far from home is a family member in KM
+> this calculates how far from home is a family member in `meters` or `ft`.
 >
 >  `meter`  
 >  ```
