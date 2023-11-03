@@ -324,8 +324,9 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 ><details>
 >  <summary> (for header) Temperature icon color based of temperature</summary>
 >  
->* paste this code to your **sensors.yaml** 
+>* paste this code to your **sensors.yaml**
 >
+> `Celsius`
 >  ```
 >    - platform: template
 >      sensors:
@@ -340,14 +341,31 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >                {% else %} grey
 >                {% endif %}
 >  ```
->  
+>
+> `Fahrenheit`
+>  ```
+>    - platform: template
+>      sensors:
+>        livingroom_temp_color_no_rgb:
+>          friendly_name: 'livingroom temp color no rgb'
+>          value_template: >
+>              {% set state = states('sensor.livingroom_temperature')|float %}
+>              {% if state >= 0 and state < 64 %} blue
+>              {% elif state >= 64 and state < 68 %} yellow
+>              {% elif state >= 68 and state < 73 %} orange
+>              {% elif state >= 73 and state < 212 %} red
+>              {% else %} grey
+>              {% endif %}
+>  ``` 
+>
 ></details>
 >
 ><details>
 >  <summary> (for rooms cards) Temperature icon color based of temperature</summary>
 >  
 >* paste this code to your **sensors.yaml**
->  
+>
+> `Celsius`
 >  ```       
 >    - platform: template
 >      sensors:
@@ -361,6 +379,22 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >                {% elif state >= 23 and state < 50 %} rgb(255, 51, 51)
 >                {% else %} grey
 >                {% endif %}
+>  ```
+> `Fahrenheit`
+>
+>  ```       
+>    - platform: template
+>      sensors:
+>        livingroom_temp_color:
+>          friendly_name: 'livingroom temp color'
+>          value_template: >
+>              {% set state = states('sensor.livingroom_temperature')|float %}
+>              {% if state >= 0 and state < 64 %} rgb(26, 209, 255)
+>              {% elif state >= 64 and state < 68 %} rgb(255, 214, 51)
+>              {% elif state >= 68 and state < 73 %} rgb(255, 163, 26)
+>              {% elif state >= 73 and state < 212 %} rgb(255, 51, 51)
+>              {% else %} grey
+>              {% endif %}
 >  ```
 >  
 ></details>
@@ -388,10 +422,11 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 ></details>
 >
 ><details>
->  <summary>(for person cards) needed for Proximity (converting to KM and math stuff)</summary>
+>  <summary>(for person cards) needed for Proximity (converting to KM/Miles and math stuff)</summary>
 >  
 >* paste this code to your **sensors.yaml** (replace the word *user* with your own name or family members names)
->  
+>
+>  `meters/KM`
 >  ```
 >    - platform: template
 >      sensors:
@@ -405,7 +440,19 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >              {% elif state > 99999 %} {{ (states('proximity.user')| int * 0.001) | round(0)}} km
 >              {% endif %}
 >  ```
->  
+>  `ft/miles`
+>  ```
+>    - platform: template
+>      sensors:
+>        user_proximity:
+>          friendly_name: 'user proximity'
+>          value_template: >
+>              {% set state = (states('proximity.user') | float * 3.28084 ) | round %}
+>              {% if state >= 0 and state < 528 %} {{state|round}} ft
+>              {% elif state >= 528 and state < 5280 %} {{ (state * 0.0001894) | round(1) }} m
+>              {% elif state >= 5280 %} {{ (state * 0.0001894) | round(1) }} m
+>              {% endif %}
+>  ```
 ></details>
 >
 ><details>
@@ -415,7 +462,8 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >  `proximity: !include proximity.yaml`
 >* create a proximity.yaml in your config/ and paste this code in it (replace the word *user* with your own name or family members names)
 > this calculates how far from home is a family member in KM
->  
+>
+>  `meter`  
 >  ```
 >user:
 >    zone: home
@@ -424,7 +472,15 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >    tolerance: 50
 >    unit_of_measurement: m
 >  ```
->  
+>  `ft`
+>  ```
+>user:
+>    zone: home
+>    devices:
+>      - device_tracker.user
+>    tolerance: 200
+>    unit_of_measurement: ft
+>  ```
 ></details>
 
 ### 7. laptop/PC states/actions:
