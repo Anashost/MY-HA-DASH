@@ -206,12 +206,17 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >    name: All devices 
 >    entities:
 >    - light.livingroom_lamp
->    - light.livingroom_led
->    - light.livingroom_neon
->    - light.livingroom_ambient
->    - light.office_lamp
->    - light.office_led
->    - light.office_desk
+>    - light.livingroom_socket
+>    - light.under_tv_led
+>    - light.behind_tv_led
+>    - light.right_led
+>    - light.left_led
+>    - light.desk_led
+>    - light.monitor_led
+>    - light.bedroom_lamp
+>    - light.kitchen_lamp
+>    - light.bath_lamp
+>    - light.wc_lamp
 >    - media_player.livingroom_speaker
 >    - media_player.bedroom_speaker
 >    - media_player.samsung_tv
@@ -1421,7 +1426,7 @@ cards:
             icon: mdi:fan
             tap_action:
               action: none
-            entity: switch.plug_4_local
+            entity: switch.plug_4
             styles:
               icon:
                 - width: 19px
@@ -1472,7 +1477,7 @@ cards:
             icon: mdi:chandelier
             tap_action:
               action: toggle
-            entity: light.livingroom_lamp_local
+            entity: light.livingroom_lamp
             styles:
               icon:
                 - width: 23px
@@ -1496,7 +1501,7 @@ cards:
             icon: mdi:chandelier
             tap_action:
               action: toggle
-            entity: light.livingroom_socket_local
+            entity: light.livingroom_socket
             styles:
               icon:
                 - width: 23px
@@ -1880,7 +1885,7 @@ cards:
             icon: mdi:chandelier
             tap_action:
               action: toggle
-            entity: light.livingroom_socket_local
+            entity: light.livingroom_socket
             styles:
               icon:
                 - width: 23px
@@ -2089,7 +2094,7 @@ cards:
             icon: mdi:fan
             tap_action:
               action: none
-            entity: switch.plug_3_local
+            entity: switch.plug_3
             styles:
               icon:
                 - width: 19px
@@ -2142,7 +2147,7 @@ cards:
             icon: mdi:light-recessed
             tap_action:
               action: toggle
-            entity: light.bedroom_lamp_local
+            entity: light.bedroom_lamp
             styles:
               icon:
                 - width: 23px
@@ -2398,7 +2403,7 @@ cards:
             icon: mdi:light-recessed
             tap_action:
               action: toggle
-            entity: light.kitchen_lamp_local
+            entity: light.kitchen_lamp
             styles:
               icon:
                 - width: 23px
@@ -2600,7 +2605,7 @@ cards:
             icon: mdi:dome-light
             tap_action:
               action: toggle
-            entity: light.bath_lamp_local
+            entity: light.bath_lamp
             styles:
               icon:
                 - width: 23px
@@ -3073,7 +3078,7 @@ cards:
             icon: mdi:light-flood-down
             tap_action:
               action: toggle
-            entity: light.hall_lamp_local
+            entity: light.hall_lamp
             styles:
               icon:
                 - width: 23px
