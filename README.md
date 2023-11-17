@@ -79,9 +79,11 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >    name: Livingroom lights
 >    entities:
 >    - light.livingroom_lamp
->    - light.livingroom_led
->    - light.livingroom_neon
->    - light.livingroom_ambient
+>    - light.livingroom_socket
+>    - light.under_tv_led
+>    - light.behind_tv_led
+>    - light.right_led
+>    - light.left_led
 >  ```
 >  
 ></details>
@@ -95,9 +97,64 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >  office_lights:
 >    name: office lights
 >    entities:
->    - light.office_lamp
->    - light.office_led
->    - light.office_desk
+>    - light.desk_led
+>    - light.monitor_led
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>Kitchen group</summary>
+>  
+>* paste this code to your **groups.yaml**
+>  
+>  ```
+>  kitchen_lights:
+>    name: kitchen lights
+>    entities:
+>    - light.kitchen_lamp
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>Bedroom group</summary>
+>  
+>* paste this code to your **groups.yaml**
+>  
+>  ```
+>  bedroom_lights:
+>    name: Bedroom lights
+>    entities:
+>    - light.bedroom_lamp
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>Bath group</summary>
+>  
+>* paste this code to your **groups.yaml**
+>  
+>  ```
+>  bath_lights:
+>    name: Bath lights
+>    entities:
+>    - light.bath_lamp
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>WC group</summary>
+>  
+>* paste this code to your **groups.yaml**
+>  
+>  ```
+>  wc_lights:
+>    name: WC lights
+>    entities:
+>    - light.wc_lamp
 >  ```
 >  
 ></details>
@@ -112,12 +169,13 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >    name: All lights
 >    entities:
 >    - light.livingroom_lamp
->    - light.livingroom_led
->    - light.livingroom_neon
->    - light.livingroom_ambient
->    - light.office_lamp
->    - light.office_led
->    - light.office_desk
+>    - light.livingroom_socket
+>    - light.under_tv_led
+>    - light.behind_tv_led
+>    - light.right_led
+>    - light.left_led
+>    - light.desk_led
+>    - light.monitor_led
 >  ```
 >  
 ></details>
