@@ -14,7 +14,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 
 ### Notes:
 - if you dont have motion sensors, you can remove the motion sensors sections from the card.
-- for fans, i'm just using smart plugs exammple: `switch.fan_plug`.
+- for fans, i'm just using smart plugs example: `switch.fan_plug`.
 - try to understand what the code does in the card to be able to customize the cards the way you like.
 - if you have any qustions, feel free to open an issue and i will reply ASAP.
 - more coming soon, follow me on [YouTube](https://www.youtube.com/@anasbox)
@@ -176,6 +176,10 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >    - light.left_led
 >    - light.desk_led
 >    - light.monitor_led
+>    - light.bedroom_lamp
+>    - light.kitchen_lamp
+>    - light.bath_lamp
+>    - light.wc_lamp
 >  ```
 >  
 ></details>
@@ -248,7 +252,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >  <summary>Livingroom Lights count</summary>
 >  
 >* paste this code to your **sensors.yaml**
->* replace livingroom in line 7 with your own Area name, (upper/lower case sensitive).
+>* replace Livingroom in line 7 with your own Area name, (upper/lower case sensitive).
 >  
 >  ```
 >    - platform: template
@@ -271,7 +275,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >  <summary>Office Lights count</summary>
 >  
 >* paste this code to your **sensors.yaml**
->* replace livingroom in line 7 with your own Area name, (upper/lower case sensitive).
+>* replace Office in line 7 with your own Area name, (upper/lower case sensitive).
 >  
 >  ```
 >    - platform: template
@@ -281,6 +285,98 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >          unique_id: office_lights_of_count
 >          value_template: >
 >            {{ expand(area_entities('Office'))
+>              | selectattr('domain', 'in', ['light'])
+>              | selectattr('state', 'eq', 'on')
+>              | rejectattr('object_id', 'search', 'segment')
+>              | list | count
+>            }}
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>Bedroom Lights count</summary>
+>  
+>* paste this code to your **sensors.yaml**
+>* replace Bedroom in line 7 with your own Area name, (upper/lower case sensitive).
+>  
+>  ```
+>    - platform: template
+>      sensors:
+>        bedroom_lights_of_count:
+>          friendly_name: 'Bedroom lights of count'
+>          unique_id: bedroom_lights_of_count
+>          value_template: >
+>            {{ expand(area_entities('Bedroom'))
+>              | selectattr('domain', 'in', ['light'])
+>              | selectattr('state', 'eq', 'on')
+>              | rejectattr('object_id', 'search', 'segment')
+>              | list | count
+>            }}
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>Kitchen Lights count</summary>
+>  
+>* paste this code to your **sensors.yaml**
+>* replace Kitchen in line 7 with your own Area name, (upper/lower case sensitive).
+>  
+>  ```
+>    - platform: template
+>      sensors:
+>        kitchen_lights_of_count:
+>          friendly_name: 'Kitchen lights of count'
+>          unique_id: kitchen_lights_of_count
+>          value_template: >
+>            {{ expand(area_entities('Kitchen'))
+>              | selectattr('domain', 'in', ['light'])
+>              | selectattr('state', 'eq', 'on')
+>              | rejectattr('object_id', 'search', 'segment')
+>              | list | count
+>            }}
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>Bath Lights count</summary>
+>  
+>* paste this code to your **sensors.yaml**
+>* replace Bath in line 7 with your own Area name, (upper/lower case sensitive).
+>  
+>  ```
+>    - platform: template
+>      sensors:
+>        bath_lights_of_count:
+>          friendly_name: 'Bath lights of count'
+>          unique_id: bath_lights_of_count
+>          value_template: >
+>            {{ expand(area_entities('Bath'))
+>              | selectattr('domain', 'in', ['light'])
+>              | selectattr('state', 'eq', 'on')
+>              | rejectattr('object_id', 'search', 'segment')
+>              | list | count
+>            }}
+>  ```
+>  
+></details>
+>
+><details>
+>  <summary>WC Lights count</summary>
+>  
+>* paste this code to your **sensors.yaml**
+>* replace WC in line 7 with your own Area name, (upper/lower case sensitive).
+>  
+>  ```
+>    - platform: template
+>      sensors:
+>        wc_lights_of_count:
+>          friendly_name: 'WC lights of count'
+>          unique_id: wc_lights_of_count
+>          value_template: >
+>            {{ expand(area_entities('WC'))
 >              | selectattr('domain', 'in', ['light'])
 >              | selectattr('state', 'eq', 'on')
 >              | rejectattr('object_id', 'search', 'segment')
@@ -326,7 +422,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >          unique_id: lights_of_count
 >          value_template: > 
 >            {%- set search_state = 'on' %}
->            {%- set search_areas = ['Bedroom','Livingroom','Kitchen','Hall','Bath','Inner Hall','WC','Office'] %}
+>            {%- set search_areas = ['Livingroom','Office','Bedroom','Kitchen','Bath','WC'] %}
 >            {%- set ns = namespace(lights=[]) %}
 >            {%- for light in states.light 
 >            | selectattr('state','eq', search_state)
