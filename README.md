@@ -54,7 +54,9 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >also create an Area called: Media (we need it later for media count)
 
 ### 4. you need to create this virtual/fake button:
->this button (input_boolean) is needed to give some mushroom cards (that we need for navigation only) some colors to create it:
+>this button (input_boolean) is needed to give some mushroom cards (that we need for navigation only) some colors, more info about it [here](https://github.com/Anashost/MY-HA-DASH/issues/8#issuecomment-1825615031).
+>
+>to create it:
 >
 >Settings > Devices & Services > Helpers > + CREATE HELPER > Toggle
 >
