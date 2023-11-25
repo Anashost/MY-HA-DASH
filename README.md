@@ -6,6 +6,15 @@
 
 Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of this dashboard.
 
+<!-- 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+-->
 # In this repo i will share with you the code of my dashboard, mainly those cards:
 - **Header card**
 - **Persons cards**
@@ -13,11 +22,12 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 <img src="https://github.com/Anashost/MY-HA-DASH/assets/41167157/fb7c4c4a-df88-41c9-8b4e-3d79cdbf88ea" width=50% height=50%>
 
 ### Notes:
-- if you dont have motion sensors, you can remove the motion sensors sections from the card.
-- for fans, i'm just using smart plugs example: `switch.fan_plug`.
-- try to understand what the code does in the card to be able to customize the cards the way you like.
-- if you have any qustions, feel free to open an issue and i will reply ASAP.
-- more coming soon, follow me on [YouTube](https://www.youtube.com/@anasbox)
+- This dashboard meant to be used in Home Assistant App for best performance.
+- If you dont have motion sensors, you can remove the motion sensors sections from the card.
+- For fans, i'm just using smart plugs example: `switch.fan_plug`.
+- Try to understand what the code does in the card to be able to customize the cards the way you like.
+- If you have any qustions, feel free to open an issue and i will reply ASAP.
+- More coming soon, follow me on [YouTube](https://www.youtube.com/@anasbox)
 
 # preparation:
 ### 1. you need to install the folowing integrations from HACS:
