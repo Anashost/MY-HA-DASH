@@ -3226,7 +3226,13 @@ cards:
 </details>
 
 ____
-<a href='https://ko-fi.com/anasbox' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+<!-- anashost_support_badges_start -->
+[![Revolut.Me][revolut_me_shield]][revolut_me]
+[![PayPal.Me][paypal_me_shield]][paypal_me]
+[![ko_fi][ko_fi_shield]][ko_fi_me]
+[![buymecoffee][buy_me_coffee_shield]][buy_me_coffee_me]
+<!-- anashost_support_badges_end -->
+
 # Enjoy
 
 [latest_release]: https://github.com/Anashost/MY-HA-DASH/releases/latest
@@ -3237,7 +3243,8 @@ ____
 
 [downloads_total_shield]: https://img.shields.io/github/downloads/Anashost/MY-HA-DASH/total
 
-[community_forum_shield]: https://img.shields.io/static/v1.svg?label=%20&message=Forum&style=popout&color=41bdf5&logo=HomeAssistant&logoColor=white
+[community_forum_shield]: 
+https://img.shields.io/badge/Fourms-23cede?style=for-the-badge&logo=HomeAssistant&logoColor=white
 
 [community_forum]: https://github.com/Anashost/MY-HA-DASH/issues
 
@@ -3255,7 +3262,7 @@ https://img.shields.io/badge/revolut-FFFFFF?style=for-the-badge&logo=revolut&log
 [ko_fi_me]: https://ko-fi.com/anasbox
 
 [buy_me_coffee_shield]: 
-https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black
+https://img.shields.io/badge/Buy%20Me%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black
 
 [buy_me_coffee_me]: https://www.buymeacoffee.com/anasbox
 
