@@ -1,7 +1,8 @@
 [![Community Forum][community_forum_shield]][community_forum]<!-- anashost_support_badges_start -->
-[![PayPal.Me][paypal_me_shield]][paypal_me]
 [![Revolut.Me][revolut_me_shield]][revolut_me]
+[![PayPal.Me][paypal_me_shield]][paypal_me]
 [![ko_fi][ko_fi_shield]][ko_fi_me]
+[![buymecoffee][buy_me_coffee_shield]][buy_me_coffee_me]
 <!-- anashost_support_badges_end -->
 
 Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of this dashboard.
@@ -3240,7 +3241,7 @@ ____
 
 [community_forum]: https://github.com/Anashost/MY-HA-DASH/issues
 
-[paypal_me_shield]: https://img.shields.io/static/v1.svg?label=%20&message=PayPal&logo=paypal
+[paypal_me_shield]: https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white
 
 [paypal_me]: https://www.paypal.me/supportanasbox
 
@@ -3248,6 +3249,14 @@ ____
 
 [revolut_me]: https://revolut.me/anas4e
 
-[ko_fi_shield]: https://img.shields.io/static/v1.svg?label=%20&message=ByMeCoffee&logo=ko-fi
+[ko_fi_shield]: https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white
 
 [ko_fi_me]: https://ko-fi.com/anasbox
+
+[buy_me_coffee_shield]: 
+https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black
+
+[buy_me_coffee_me]: https://www.buymeacoffee.com/anasbox
+
+
+
