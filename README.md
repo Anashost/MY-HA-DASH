@@ -1,6 +1,6 @@
 [![Community Forum][community_forum_shield]][community_forum]<!-- anashost_support_badges_start -->
 [![Revolut.Me][revolut_me_shield]][revolut_me]
-[![PayPal.Me][paypal_me_shield]][paypal_me]
+<!-- [![PayPal.Me][paypal_me_shield]][paypal_me]-->
 [![ko_fi][ko_fi_shield]][ko_fi_me]
 [![buymecoffee][buy_me_coffee_shield]][buy_me_coffee_me]
 <!-- anashost_support_badges_end -->
@@ -3228,7 +3228,6 @@ cards:
 ____
 <!-- anashost_support_badges_start -->
 [![Revolut.Me][revolut_me_shield]][revolut_me]
-[![PayPal.Me][paypal_me_shield]][paypal_me]
 [![ko_fi][ko_fi_shield]][ko_fi_me]
 [![buymecoffee][buy_me_coffee_shield]][buy_me_coffee_me]
 <!-- anashost_support_badges_end -->
@@ -3250,7 +3249,7 @@ https://img.shields.io/badge/Fourms-23cede?style=for-the-badge&logo=HomeAssistan
 
 [paypal_me_shield]: https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white
 
-[paypal_me]: https://www.paypal.me/supportanasbox
+[paypal_me]: https://www.google.com
 
 [revolut_me_shield]:
 https://img.shields.io/badge/revolut-FFFFFF?style=for-the-badge&logo=revolut&logoColor=black
