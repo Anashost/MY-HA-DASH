@@ -3249,7 +3249,7 @@ https://img.shields.io/badge/Fourms-23cede?style=for-the-badge&logo=HomeAssistan
 
 [paypal_me_shield]: https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white
 
-[paypal_me]: paypal.me/anasboxsupport
+[paypal_me]: https://paypal.me/anasboxsupport
 
 [revolut_me_shield]:
 https://img.shields.io/badge/revolut-FFFFFF?style=for-the-badge&logo=revolut&logoColor=black
