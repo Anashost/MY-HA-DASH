@@ -3228,6 +3228,7 @@ cards:
 ____
 <!-- anashost_support_badges_start -->
 [![Revolut.Me][revolut_me_shield]][revolut_me]
+[![PayPal.Me][paypal_me_shield]][paypal_me]
 [![ko_fi][ko_fi_shield]][ko_fi_me]
 [![buymecoffee][buy_me_coffee_shield]][buy_me_coffee_me]
 <!-- anashost_support_badges_end -->
