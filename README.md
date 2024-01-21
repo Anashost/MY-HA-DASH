@@ -659,7 +659,7 @@ Here's a [link](https://github.com/Anashost/MY-HA-DASH-V1) to the old version of
 >To get the state of the laptop/PC like in the office room,
 >i've used [HASS.Agent](https://github.com/LAB02-Research/HASS.Agent).
 
-# Setup Dashboard :
+# Setup Dashboard cards :
 
 ### Header card:
 <img src="https://github.com/Anashost/MY-HA-DASH/assets/41167157/bd2b3456-237c-4628-8b70-2a2b76ff5a97" width=60% height=60%>
