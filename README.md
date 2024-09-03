@@ -1320,7 +1320,7 @@ cards:
         primary: ''
         secondary: 'other info:'
         icon: ''
-        entity: sensor.karam_wifi_connection
+        entity: sensor.user_wifi_connection
         layout: vertical
         double_tap_action:
           action: none
