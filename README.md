@@ -2770,7 +2770,7 @@ cards:
     keep:
       outer_padding: false
     cards:
-      - type: custom:mushroom-template-card
+      - type: custom:mushroom-legacy-template-card
         card_mod:
           style:
             mushroom-shape-icon$: |
